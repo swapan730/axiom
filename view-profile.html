@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Axiom - Chat, Discussion, Forums, Knowledge and Support Platform</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta content="A premium admin dashboard template by Mannatthemes" name="description">
+      <meta name="author" content="">
+      <!-- Main CSS -->
+      <link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="assets/plugins/metisMenu/metisMenu.min.css">
+      <link rel="stylesheet" type="text/css" href="assets/plugins/themify-icons/themify-icons.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/app.min.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <!-- Favicon -->
+      <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+   </head>
+   <body>
+      <!--================================-->
+      <!-- Top Bar Start -->
+      <!--================================-->
+      <div class="topbar">
+         <!-- Logo Start -->
+         <div class="topbar-left">
+            <a href="index.html" class="logo">
+            <span><img src="assets/images/logo-sm.png" alt="logo-small" class="logo-sm"> </span>
+            <span><img src="assets/images/logo-dark.png" alt="logo-large" class="logo-lg"></span>
+            </a>
+         </div>
+         <!--/ Logo End-->
+         <!-- Profile Dropdown Start -->
+         <nav class="navbar-custom">
+            <ul class="list-unstyled topbar-nav float-right mb-0">
+               <li class="dropdown">
+                  <a class="nav-link dropdown-toggle nav-user" data-toggle="dropdown" href="" role="button" aria-haspopup="false" aria-expanded="false" data-display="static"><img src="assets/images/avatar/avatar5.png" alt="profile-user" class="rounded-circle"></a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                     <a class="dropdown-item" href="view-profile.html"><i data-feather="user" class="wd-16 ht-16 mr-2"></i>View Profile</a> 
+                     <a class="dropdown-item" href="edit-profile.html"><i data-feather="edit" class="wd-16 ht-16 mr-2"></i>Edit Profile</a> 
+                     <a class="dropdown-item" href=""><i data-feather="dollar-sign" class="wd-16 ht-16 mr-2"></i> My Wallet</a>
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" href="tickets-home.html"><i data-feather="help-circle" class="wd-16 ht-16 mr-2"></i>Supports Center</a> 
+                     <a class="dropdown-item" href="tickets-home.html"><i data-feather="crosshair" class="wd-16 ht-16 mr-2"></i>Customer Helpline</a> 
+                     <a class="dropdown-item" href="forums.html"><i data-feather="life-buoy" class="wd-16 ht-16 mr-2"></i>Forum Discussion</a>
+                     <a class="dropdown-item" href="#modalAccountSettings" data-toggle="modal"><i data-feather="settings" class="wd-16 ht-16 mr-2"></i>Account Settings</a>
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" href="sign-in.html"><i data-feather="power" class="wd-16 ht-16 mr-2"></i> Sign Out</a>
+                  </div>
+               </li>
+            </ul>
+            <ul class="list-unstyled topbar-nav mb-0">
+               <li><button class="button-menu-mobile nav-link"><i class="wd-20 ht-20" data-feather="align-justify" ></i></button></li>
+               <li class="hide-phone app-search">
+                  <form role="search" class=""><input type="text" placeholder="Search..." class="form-control"> <a href=""><i class="wd-16 ht-16" data-feather="search"></i></a></form>
+               </li>
+            </ul>
+         </nav>
+         <!--/ Profile Dropdown End -->
+      </div>
+      <!--/ Topbar End -->
+      <!--================================-->
+      <!-- Page Wrapper Start -->
+      <!--================================-->
+      <div class="page-wrapper">
+         <!--================================-->
+         <!-- Sidebar Navigation Start -->
+         <!--================================-->
+         <div class="left-sidenav">
+            <div class="main-icon-menu">
+               <nav class="nav">
+                  <a href="#chatDiscussion" class="nav-link" data-toggle="tooltip-custom" data-placement="right" title="" data-original-title="Chat & Discussion">
+                  <i data-feather="message-square"></i>
+                  </a>
+                  <a href="#questionsAnswers" class="nav-link" data-toggle="tooltip-custom" data-placement="right" title="" data-original-title="Questions & Answers">
+                  <i data-feather="help-circle"></i>                     
+                  </a>
+                  <a href="#knowledgeBase" class="nav-link" data-toggle="tooltip-custom" data-placement="right" title="" data-original-title="Knowledge Base">
+                  <i data-feather="command"></i>
+                  </a>
+                  <a href="#ticketsSupports" class="nav-link" data-toggle="tooltip-custom" data-placement="right" title="" data-original-title="Tickets/Supports">
+                  <i data-feather="life-buoy"></i>
+                  </a>
+                  <a href="#myProfile" class="nav-link" data-toggle="tooltip-custom" data-placement="right" title="" data-original-title="My Profile">
+                  <i data-feather="user"></i>
+                  </a>
+                  <a href="#authenticationPages" class="nav-link" data-toggle="tooltip-custom" data-placement="right" title="" data-original-title="Authentication" style="margin-top: auto;">
+                  <i data-feather="box"></i>
+                  </a>
+                  <a href="#modalAccountSettings" class="mg-t-15 tx-dark" data-toggle="modal" data-placement="right" title="" data-original-title="Settings">
+                  <span data-toggle="tooltip-custom" data-placement="right" title="" data-original-title="Account Settings"><i data-feather="settings"></i></span>
+                  </a>				  
+                  <a href="sign-in.html" class="mg-t-20 tx-dark" data-toggle="tooltip-custom" data-placement="right" title="" data-original-title="Sign Out">
+                  <i data-feather="power"></i>
+                  </a>
+               </nav>
+            </div>
+            <div class="main-menu-inner">
+               <div class="menu-body slimscroll">
+                  <div id="chatDiscussion" class="main-icon-menu-pane">
+                     <div class="title-box">
+                        <h6 class="menu-title">Chat & Discussion</h6>
+                     </div>
+                     <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><i class="wd-16 ht-16 mr-2" data-feather="message-circle"></i>Live Chats</a></li>
+                        <li class="nav-item"><a class="nav-link" href="groups.html"><i class="wd-16 ht-16 mr-2" data-feather="users"></i>Groups</a></li>
+                        <li class="nav-item"><a class="nav-link" href="events.html"><i class="wd-16 ht-16 mr-2" data-feather="coffee"></i>Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="forums.html"><i class="wd-16 ht-16 mr-2" data-feather="layout"></i>Forums</a></li>
+                     </ul>
+                  </div>
+                  <div id="questionsAnswers" class="main-icon-menu-pane">
+                     <div class="title-box">
+                        <h6 class="menu-title">Questions & Answers</h6>
+                     </div>
+                     <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="new-questions.html"><i class="wd-16 ht-16 mr-2" data-feather="gitlab"></i>New Questions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="trending-questions.html"><i class="wd-16 ht-16 mr-2" data-feather="zap"></i>Trending Questions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hot-questions.html"><i class="wd-16 ht-16 mr-2" data-feather="coffee"></i>Hot Questions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="popular-questions.html"><i class="wd-16 ht-16 mr-2" data-feather="layout"></i>Popular Questions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="most-answered-questions.html"><i class="wd-16 ht-16 mr-2" data-feather="help-circle"></i>Most Answered</a></li>
+                        <li class="nav-item"><a class="nav-link" href="must-read-questions.html"><i class="wd-16 ht-16 mr-2" data-feather="check-circle"></i>Must read Questions</a></li>
+                     </ul>
+                  </div>
+                  <div id="knowledgeBase" class="main-icon-menu-pane">
+                     <div class="title-box">
+                        <h6 class="menu-title">Knowledge Base</h6>
+                     </div>
+                     <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="topics-home.html"><i class="wd-16 ht-16 mr-2" data-feather="feather"></i>Topics Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="single-topic.html"><i class="wd-16 ht-16 mr-2" data-feather="copy"></i>Single Topic</a></li>
+                        <li class="nav-item"><a class="nav-link" href="popular-topics.html"><i class="wd-16 ht-16 mr-2" data-feather="layout"></i>Popular Topics</a></li>
+                     </ul>
+                  </div>
+                  <div id="ticketsSupports" class="main-icon-menu-pane nav.navigation">
+                     <div class="title-box">
+                        <h6 class="menu-title">Tickets/Supports</h6>
+                     </div>
+                     <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="tickets-home.html"><i class="wd-16 ht-16 mr-2" data-feather="feather"></i>Tickets Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="single-ticket.html"><i class="wd-16 ht-16 mr-2" data-feather="copy"></i>Single Ticket</a></li>
+                        <li class="nav-item"><a class="nav-link" href="supports-team.html"><i class="wd-16 ht-16 mr-2" data-feather="users"></i>Supports Team</a></li>
+                     </ul>
+                  </div>
+                  <div id="myProfile" class="main-icon-menu-pane">
+                     <div class="title-box">
+                        <h6 class="menu-title">My Profile</h6>
+                     </div>
+                     <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="view-profile.html"><i class="wd-16 ht-16 mr-2" data-feather="user"></i>View Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="edit-profile.html"><i class="wd-16 ht-16 mr-2" data-feather="edit"></i>Edit Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#modalAccountSettings" data-toggle="modal"><i class="wd-16 ht-16 mr-2" data-feather="settings"></i>Settings</a></li>
+                     </ul>
+                  </div>
+                  <div id="authenticationPages" class="main-icon-menu-pane">
+                     <div class="title-box">
+                        <h6 class="menu-title">Authentication</h6>
+                     </div>
+                     <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="sign-in.html"><i class="dripicons-enter"></i>Sign In</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sign-up.html"><i class="dripicons-pencil"></i>Sign Up</a></li>
+                        <li class="nav-item"><a class="nav-link" href="lock-screen.html"><i class="dripicons-lock"></i>Lock Screen</a></li>
+                        <li class="nav-item"><a class="nav-link" href="404.html"><i class="dripicons-warning"></i>Error 404</a></li>
+                        <li class="nav-item"><a class="nav-link" href="500.html"><i class="dripicons-wrong"></i>Error 500</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--/ Sidebar Navigation End -->
+         <!--================================-->
+         <!-- Page Contant Start -->
+         <!--================================-->
+         <div class="page-content">
+            <div class="container-fluid">
+               <div class="row no-gutters clearfix pd-0">
+                  <div class="col-md-4 col-xl-3">
+                     <div class="slimscroll">
+                        <div class="chat-left-sidebar-header">
+                           <a href="" data-toggle="dropdown" class="dropdown-link" aria-expanded="false" data-display="static">
+                              <div class="d-flex align-items-center justify-content-between">
+                                 <div class="d-flex align-items-center">
+                                    <div class="avatar avatar-sm mg-r-10">
+                                       <img src="assets/images/avatar/avatar5.png" class="img-fluid wd-35 rounded-circle" alt="">
+                                    </div>
+                                    <div>
+                                       <p class="tx-semibold tx-dark mb-0">Katherine</p>
+                                       <p class="tx-gray-500 tx-10 mb-0">@katherine</p>
+                                    </div>
+                                 </div>
+                                 <span><i class="wd-16 ht-16 mr-2" data-feather="chevron-down"></i></span>
+                              </div>
+                           </a>
+                           <div class="dropdown-menu dropdown-menu-right tx-13 ">
+                              <a href="" class="dropdown-item"><i class="wd-16 ht-16 mr-2" data-feather="user-plus"></i>Invite People</a>
+                              <a href="" class="dropdown-item"><i class="wd-16 ht-16 mr-2" data-feather="bell"></i>Notification Settings</a>
+                              <div class="dropdown-divider"></div>
+                              <h3 class="tx-13 tx-bold tx-dark pd-t-5 pd-x-25">Groups Settings</h3>
+                              <a href="" class="dropdown-item"><i class="wd-16 ht-16 mr-2" data-feather="plus-square"></i>Create Group</a>
+                              <a href="" class="dropdown-item"><i class="wd-16 ht-16 mr-2" data-feather="edit"></i>Edit Group</a>
+                              <div class="dropdown-divider"></div>
+                              <h3 class="tx-13 tx-bold tx-dark pd-t-5 pd-x-25">Events Settings</h3>
+                              <a href="" class="dropdown-item"><i class="wd-16 ht-16 mr-2" data-feather="archive"></i>Create Event</a>
+                              <a href="" class="dropdown-item"><i class="wd-16 ht-16 mr-2" data-feather="edit"></i>Edit Event</a>
+                              <div class="dropdown-divider"></div>
+                              <h3 class="tx-13 tx-bold tx-dark pd-t-5 pd-x-25">Forum Settings</h3>
+                              <a href="" class="dropdown-item"><i class="wd-16 ht-16 mr-2" data-feather="layout"></i>Create Forum</a>
+                              <a href="" class="dropdown-item"><i class="wd-16 ht-16 mr-2" data-feather="edit"></i>Edit Forum</a>
+                              <div class="dropdown-divider"></div>
+                           </div>
+                        </div>
+                        <div class="chat-left-sidebar">
+                           <div class="card-body pd-15">
+                              <div class="lead tx-13 mg-b-15">
+                                 <p class="d-block tx-normal">Augue mauris arcu, ut venenatis metus ante eu. Donec non ut finibus. <a href="">Read more</a></p>
+                                 <div class="clearfix mg-t-20"> 
+                                    <span class="tx-uppercase tx-10 tx-normal">HTML5</span>
+                                    <span class="float-right tx-11">
+                                    <span class="tx-dark tx-normal">90%</span>
+                                    </span>
+                                 </div>
+                                 <div class="progress ht-5 op-5">
+                                    <div class="progress-bar bg-warning wd-90p" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                 </div>
+                                 <div class="clearfix mg-t-20"> 
+                                    <span class="tx-uppercase tx-10 tx-normal">CSS3</span> 
+                                    <span class="float-right tx-11">
+                                    <span class="tx-dark tx-normal">85%</span>
+                                    </span>
+                                 </div>
+                                 <div class="progress ht-5 op-5">
+                                    <div class="progress-bar bg-danger wd-85p" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                 </div>
+                                 <div class="clearfix mg-t-20"> 
+                                    <span class="tx-uppercase tx-10 tx-normal">jQuery</span> 
+                                    <span class="float-right tx-11">
+                                    <span class="tx-dark tx-normal">75%</span>
+                                    </span>
+                                 </div>
+                                 <div class="progress ht-5 op-5">
+                                    <div class="progress-bar bg-teal wd-75p" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                 </div>
+                                 <div class="clearfix mg-t-20"> 
+                                    <span class="tx-uppercase tx-10 tx-normal">Bootstrap</span>
+                                    <span class="float-right tx-11">
+                                    <span class="tx-dark tx-normal">95%</span>
+                                    </span> 
+                                 </div>
+                                 <div class="progress ht-5 op-5">
+                                    <div class="progress-bar bg-indigo wd-95p" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                 </div>
+                                 <div class="clearfix mg-t-20"> 
+                                    <span class="tx-uppercase tx-10 tx-normal">Responsive</span> 
+                                    <span class="float-right tx-11">
+                                    <span class="tx-dark tx-normal">80%</span>
+                                    </span>
+                                 </div>
+                                 <div class="progress ht-5 op-5">
+                                    <div class="progress-bar bg-pink wd-80p" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card bd-l-0-force bd-t-0-force bd-r-0-force bd-b-0-force">
+                              <div class="card-body pd-15">
+                                 <label class="tx-13 tx-bold tx-dark mg-b-10">Websites &amp; Social Channel</label>
+                                 <ul class="list-unstyled profile-info-list mb-0">
+                                    <li class="pd-y-5"><i class="ti-wordpress tx-16 mr-2 tx-dark"></i><a class="tx-dark" href="">http://wordpress.com/user</a></li>
+                                    <li class="pd-y-5"><i class="ti-facebook tx-16 mr-2"></i><a class="tx-dark" href="">http://facebook.com/user</a></li>
+                                    <li class="pd-y-5"><i class="ti-twitter tx-16 mr-2"></i><a class="tx-dark" href="">http://twitter.com/user</a></li>
+                                    <li class="pd-y-5"><i class="ti-instagram tx-16 mr-2"></i><a class="tx-dark" href="">http://instagram.com/user</a></li>
+                                    <li class="pd-y-5"><i class="ti-linkedin tx-16 mr-2"></i><a class="tx-dark" href="">http://linkedin.com/user</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="card bd-l-0-force bd-t-0-force bd-r-0-force bd-b-0-force">
+                              <div class="card-body pd-15">
+                                 <label class="tx-13 tx-bold tx-dark mg-b-10">About Information</label>
+                                 <ul class="list-unstyled profile-info-list mb-0">
+                                    <li class="pd-y-5"><i class="ti-crown tx-16 mr-2"></i><a class="tx-dark" href="">Works at: G-axon Tech Pvt.</a></li>
+                                    <li class="pd-y-5"><i class="ti-calendar tx-16 mr-2"></i><a class="tx-dark" href="">Birthday: Oct 25, 1984</a></li>
+                                    <li class="pd-y-5"><i class="ti-world tx-16 mr-2"></i><a class="tx-dark" href="">Went to: Oxford University</a></li>
+                                    <li class="pd-y-5"><i class="ti-map-alt tx-16 mr-2"></i><a class="tx-dark" href="">Lives in London: Switzerland</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="card bd-l-0-force bd-t-0-force bd-r-0-force bd-b-0-force">
+                              <div class="card-body pd-15">
+                                 <label class="tx-13 tx-bold tx-dark mg-b-10">Contact Information</label>
+                                 <ul class="list-unstyled profile-info-list mb-0">
+                                    <li class="pd-y-5"><i class="ti-home tx-16 mr-2"></i><a class="tx-dark" href="">Bay Area, San Francisco, CA</a></li>
+                                    <li class="pd-y-5"><i class="ti-map tx-16 mr-2"></i><a class="tx-dark" href="">Westfield, Oakland, CA</a></li>
+                                    <li class="pd-y-5"><i class="ti-mobile tx-16 mr-2"></i><a class="tx-dark" href="">(+1) 012 345 6789</a></li>
+                                    <li class="pd-y-5"><i class="ti-headphone-alt tx-16 mr-2"></i><a class="tx-dark" href="">(+1) 987 654 3201</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-8 col-xl-9">
+                     <div class="row clearfix slimscroll">
+                        <div class="col-12">
+                           <div class="card bd-l-0-force bd-t-0-force bd-r-0-force">
+                              <div class="card-body bg-primary pd-y-50">
+                                 <div class="row no-gutters">
+                                    <div class="col-lg-6 mg-t-20">
+                                       <div class="d-flex align-items-center">
+                                          <div class="mr-3">										
+                                             <span class="avatar avatar-lg avatar-online pd-b-20">
+                                             <img src="assets/images/avatar/avatar5.png" class="img-fluid wd-100 rounded-circle" alt="">
+                                             </span>
+                                          </div>
+                                          <div class="mg-b-0">
+                                             <h5 class="tx-gray-100 tx-15 mg-b-0">Katherine</h5>
+                                             <p class="mg-b-10 tx-gray-300">@katherine</p>
+                                             <a href="" class="btn btn-sm btn-danger flex-fill mg-r-10">Follow</a>
+                                             <a href="" class="btn btn-sm btn-warning flex-fill">Message</a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-4 mg-t-10 mg-l-auto">
+                                       <ul class="list-unstyled tx-gray-100 mb-0">
+                                          <li><i class="ti-target mr-2 font-18"></i> <b>Gender </b>: Meal</li>
+                                          <li class="mt-2"><i class="ti-mobile mr-2 font-18"></i> <b>phone </b>: +91 23456 78910</li>
+                                          <li class="mt-2"><i class="ti-headphone-alt mr-2 font-18"></i> <b>phone </b>: (800) 477-1477</li>
+                                          <li class="mt-2"><i class="ti-email mr-2 font-18"></i> <b>Email </b>: example@email.com</li>
+                                          <li class="mt-2"><i class="ti-map mr-2 font-18"></i> <b>Location</b> : California</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-12">
+                           <div class="card bd-t-0-force bd-b-0-force pd-t-20">
+                              <div class="tab-content" id="pills-tabContent">
+                                 <div class="mg-b-10">
+                                    <div class="card-body pd-0 pd-x-20 mg-b-15">
+                                       <div class="publisher publisher-multi mg-b-20">
+                                          <div class="flexbox bd p-2">
+                                             <img class="wd-40 avatar avatar-md align-self-start rounded-circle" src="assets/images/avatar/avatar5.png" alt="">
+                                             <textarea class="publisher-input auto-expand mg-t-10 pd-l-15" rows="3" placeholder="Write something"></textarea>
+                                          </div>
+                                          <div class="flexbox p-2 bd bd-t-0-force">
+                                             <div class="gap-items mg-t-5">
+                                                <span class="publisher-btn file-group">
+                                                <i class="ti-link file-browser"></i>
+                                                <input type="file">
+                                                </span>
+                                                <a class="publisher-btn" href=""><i class="ti-map"></i></a>
+                                                <a class="publisher-btn" href=""><i class="ti-face-smile"></i></a>
+                                             </div>
+                                             <button class="btn btn-sm btn-primary">Publish</button>
+                                          </div>
+                                       </div>
+                                       <div class="profiletimeline mt-0">
+                                          <div class="sl-item">
+                                             <div class="sl-left"> <img src="assets/images/avatar/avatar1.png" alt="user" class="rounded-circle bd"> </div>
+                                             <div class="sl-right">
+                                                <div>
+                                                   <a href="" class="link">John Smith</a> <span class="sl-date">15 minutes ago</span>
+                                                   <p>assign a new task <a href=""> Design weblayout</a></p>
+                                                   <div class="row row-xs">
+                                                      <div class="col-lg-3 col-md-6 mb-3"><img src="assets/images/gallery/8.jpg" class="img-fluid rounded" alt=""></div>
+                                                      <div class="col-lg-3 col-md-6 mb-3"><img src="assets/images/gallery/9.jpg" class="img-fluid rounded" alt=""></div>
+                                                      <div class="col-lg-3 col-md-6 mb-3"><img src="assets/images/gallery/13.jpg" class="img-fluid rounded" alt=""></div>
+                                                      <div class="col-lg-3 col-md-6 mb-3"><img src="assets/images/gallery/14.jpg" class="img-fluid rounded" alt=""></div>
+                                                   </div>
+                                                   <div class="like-comm"> 															 
+                                                      <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="thumbs-up"></i> 57 Like</a>
+                                                      <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="thumbs-down"></i> 3 Dislike</a>
+                                                      <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="message-square"></i> 10 comment</a>
+                                                      <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="share-2"></i> 6 Share</a>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <hr>
+                                          <div class="sl-item">
+                                             <div class="sl-left"> <img src="assets/images/avatar/avatar2.png" alt="user" class="rounded-circle bd"> </div>
+                                             <div class="sl-right">
+                                                <div>
+                                                   <a href="#" class="link">Jackson Chalse</a> <span class="sl-date">49 minutes ago</span>
+                                                   <div class="mt-3 row row-xs">
+                                                      <div class="col-md-3 col-xs-12"><img src="assets/images/gallery/15.jpg" alt="user" class="img-fluid rounded"></div>
+                                                      <div class="col-md-9 col-xs-12">
+                                                         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. </p>
+                                                         <a href="" class="btn btn-sm btn-primary"> Design weblayout</a>
+                                                      </div>
+                                                   </div>
+                                                   <div class="like-comm"> 															 
+                                                      <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="thumbs-up"></i> 57 Like</a>
+                                                      <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="thumbs-down"></i> 3 Dislike</a>
+                                                      <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="message-square"></i> 10 comment</a>
+                                                      <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="share-2"></i> 6 Share</a>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <hr>
+                                          <div class="sl-item">
+                                             <div class="sl-left"> <img src="assets/images/avatar/avatar3.png" alt="user" class="rounded-circle bd"> </div>
+                                             <div class="sl-right">
+                                                <div>
+                                                   <a href="#" class="link">John Doe</a> <span class="sl-date">1 day ago</span>
+                                                   <p class="mt-2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper </p>
+                                                </div>
+                                                <div class="like-comm"> 															 
+                                                   <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="thumbs-up"></i> 57 Like</a>
+                                                   <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="thumbs-down"></i> 3 Dislike</a>
+                                                   <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="message-square"></i> 10 comment</a>
+                                                   <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="share-2"></i> 6 Share</a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <hr>
+                                          <div class="sl-item">
+                                             <div class="sl-left"> <img src="assets/images/avatar/avatar4.png" alt="user" class="rounded-circle bd"> </div>
+                                             <div class="sl-right">
+                                                <div>
+                                                   <a href="#" class="link">John Deo</a> <span class="sl-date">1 day ago</span>
+                                                   <blockquote class="mt-2">
+                                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                                   </blockquote>
+                                                </div>
+                                                <div class="like-comm"> 															 
+                                                   <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="thumbs-up"></i> 57 Like</a>
+                                                   <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="thumbs-down"></i> 3 Dislike</a>
+                                                   <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="message-square"></i> 10 comment</a>
+                                                   <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="share-2"></i> 6 Share</a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <hr>
+                                          <div class="sl-item">
+                                             <div class="sl-left"> <img src="assets/images/avatar/avatar5.png" alt="user" class="rounded-circle bd"> </div>
+                                             <div class="sl-right">
+                                                <div>
+                                                   <a href="" class="link">Jackson Chalse</a> <span class="sl-date">2 days ago</span>
+                                                   <div class="mt-3 row row-xs">
+                                                      <div class="col-md-3 col-xs-12"><img src="assets/images/gallery/16.jpg" alt="user" class="img-fluid rounded"></div>
+                                                      <div class="col-md-9 col-xs-12">
+                                                         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+                                                         </p>
+                                                      </div>
+                                                   </div>
+                                                   <div class="like-comm"> 															 
+                                                      <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="thumbs-up"></i> 57 Like</a>
+                                                      <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="thumbs-down"></i> 3 Dislike</a>
+                                                      <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="message-square"></i> 10 comment</a>
+                                                      <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="share-2"></i> 6 Share</a>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <hr>
+                                          <div class="sl-item">
+                                             <div class="sl-left"> <img src="assets/images/avatar/avatar6.png" alt="user" class="rounded-circle bd"> </div>
+                                             <div class="sl-right">
+                                                <div>
+                                                   <a href="#" class="link">Hannah Hariston</a> <span class="sl-date">5 days ago</span>
+                                                   <p class="mt-2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper </p>
+                                                </div>
+                                                <div class="like-comm"> 															 
+                                                   <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="thumbs-up"></i> 57 Like</a>
+                                                   <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="thumbs-down"></i> 3 Dislike</a>
+                                                   <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="message-square"></i> 10 comment</a>
+                                                   <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="share-2"></i> 6 Share</a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <hr>
+                                          <div class="sl-item">
+                                             <div class="sl-left"> <img src="assets/images/avatar/avatar5.png" alt="user" class="rounded-circle bd"> </div>
+                                             <div class="sl-right">
+                                                <div>
+                                                   <a href="" class="link">John Smith</a> <span class="sl-date">5 days ago</span>
+                                                   <p>assign a new task <a href="#"> Design weblayout</a></p>
+                                                   <div class="row row-xs">
+                                                      <div class="col-lg-3 col-md-6 mb-3"><img src="assets/images/gallery/17.jpg" class="img-fluid rounded" alt=""></div>
+                                                      <div class="col-lg-3 col-md-6 mb-3"><img src="assets/images/gallery/18.jpg" class="img-fluid rounded" alt=""></div>
+                                                      <div class="col-lg-3 col-md-6 mb-3"><img src="assets/images/gallery/19.jpg" class="img-fluid rounded" alt=""></div>
+                                                      <div class="col-lg-3 col-md-6 mb-3"><img src="assets/images/gallery/20.jpg" class="img-fluid rounded" alt=""></div>
+                                                   </div>
+                                                   <div class="like-comm"> 															 
+                                                      <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="thumbs-up"></i> 57 Like</a>
+                                                      <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="thumbs-down"></i> 3 Dislike</a>
+                                                      <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="message-square"></i> 10 comment</a>
+                                                      <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="share-2"></i> 6 Share</a>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <hr>
+                                          <div class="sl-item">
+                                             <div class="sl-left"> <img src="assets/images/avatar/avatar4.png" alt="user" class="rounded-circle bd"> </div>
+                                             <div class="sl-right">
+                                                <div>
+                                                   <a href="" class="link">John Doe</a> <span class="sl-date">7 days ago</span>
+                                                   <blockquote class="mt-2">
+                                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                                   </blockquote>
+                                                </div>
+                                                <div class="like-comm"> 															 
+                                                   <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="thumbs-up"></i> 57 Like</a>
+                                                   <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="thumbs-down"></i> 3 Dislike</a>
+                                                   <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="message-square"></i> 10 comment</a>
+                                                   <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="share-2"></i> 6 Share</a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <hr>
+                                          <div class="sl-item">
+                                             <div class="sl-left"> <img src="assets/images/avatar/avatar3.png" alt="user" class="rounded-circle bd"> </div>
+                                             <div class="sl-right">
+                                                <div>
+                                                   <a href="" class="link">John Doe</a> <span class="sl-date">7 days ago</span>
+                                                   <blockquote class="mt-2">
+                                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                                   </blockquote>
+                                                </div>
+                                                <div class="like-comm"> 															 
+                                                   <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="thumbs-up"></i> 57 Like</a>
+                                                   <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="thumbs-down"></i> 3 Dislike</a>
+                                                   <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="message-square"></i> 10 comment</a>
+                                                   <a href="" class="link mr-2 tx-gray-500 tx-11"><i class="wd-10" data-feather="share-2"></i> 6 Share</a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div>
+                                             <button class="btn btn-primary tx-13"><i class="fa fa-refresh"></i> Load More...</button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/ View Profile Content End-->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--/ Page Content End -->
+      </div>
+      <!--/ Page Wrapper End -->
+      <!--================================-->
+      <!-- Account Settings Modal Start -->
+      <!--================================-->
+      <div class="modal fade effect-scale" id="modalAccountSettings" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title">Settings</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <i class="ti-close tx-16"></i>
+                  </button>
+               </div>
+               <div class="modal-body pd-y-20">
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#account" role="tab" aria-controls="account" aria-selected="true">Account</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#notification" role="tab" aria-controls="notification" aria-selected="false">Notification</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#system" role="tab" aria-controls="system" aria-selected="false">System</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#reports" role="tab" aria-controls="reports" aria-selected="false">Reports</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#security" role="tab" aria-controls="security" aria-selected="false">Security</a>
+                     </li>
+                  </ul>
+                  <div class="tab-content pd-y-20">
+                     <div class="tab-pane show active" id="account" role="tabpanel">
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch1">
+                           <label class="custom-control-label" for="customSwitch1">Allow connected contacts</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch2">
+                           <label class="custom-control-label" for="customSwitch2">Confirm message requests</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch3">
+                           <label class="custom-control-label" for="customSwitch3">Profile privacy</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" id="customSwitch4">
+                           <label class="custom-control-label" for="customSwitch4">Developer mode options</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch5">
+                           <label class="custom-control-label" for="customSwitch5">Two-step security verification</label>
+                        </div>
+                     </div>
+                     <div class="tab-pane" id="notification" role="tabpanel">
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch6">
+                           <label class="custom-control-label" for="customSwitch6">Allow mobile notifications</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch7">
+                           <label class="custom-control-label" for="customSwitch7">Notifications from your friends</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" id="customSwitch8">
+                           <label class="custom-control-label" for="customSwitch8">Send notifications by email</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch9">
+                           <label class="custom-control-label" for="customSwitch9">Notify when receive email</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch10">
+                           <label class="custom-control-label" for="customSwitch10">Receive calls in meeting</label>
+                        </div>
+                     </div>
+                     <div class="tab-pane" id="system" role="tabpanel">
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch11">
+                           <label class="custom-control-label" for="customSwitch11">Automatic updates</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" id="customSwitch12">
+                           <label class="custom-control-label" for="customSwitch12">Current statistics</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" id="customSwitch13">
+                           <label class="custom-control-label" for="customSwitch13">New user registration</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" id="customSwitch14">
+                           <label class="custom-control-label" for="customSwitch14">User suggestions</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch15">
+                           <label class="custom-control-label" for="customSwitch15">Update on task completion</label>
+                        </div>
+                     </div>
+                     <div class="tab-pane" id="reports" role="tabpanel">
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch16">
+                           <label class="custom-control-label" for="customSwitch16">Generate Reports</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch17">
+                           <label class="custom-control-label" for="customSwitch17">Notify when receive email</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch18">
+                           <label class="custom-control-label" for="customSwitch18">Enable Report Export</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" id="customSwitch19">
+                           <label class="custom-control-label" for="customSwitch19">Allow Data Collection</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch20">
+                           <label class="custom-control-label" for="customSwitch20">Update on task completion</label>
+                        </div>
+                     </div>
+                     <div class="tab-pane" id="security" role="tabpanel">
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" id="customSwitch21">
+                           <label class="custom-control-label" for="customSwitch21">Suggest changing passwords every month.</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch22">
+                           <label class="custom-control-label" for="customSwitch22">Let me know about suspicious entries to your account</label>
+                        </div>
+                        <div class="form-item mg-t-15">
+                           <p>
+                              <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true" aria-controls="collapseExample" class="">
+                              <span class="ti-plus btn-icon"></span> Security Questions
+                              </a>
+                           </p>
+                           <div class="collapse show" id="collapseExample" style="">
+                              <div class="form-group">
+                                 <input type="text" class="form-control form-control-sm" placeholder="Question 1">
+                              </div>
+                              <div class="form-group">
+                                 <input type="text" class="form-control form-control-sm" placeholder="Question 2">
+                              </div>
+                              <div class="form-group">
+                                 <input type="text" class="form-control form-control-sm" placeholder="Question 3">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-sm btn-primary">Save Settings</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--/ Account Settings Modal End  --> 
+      <!-- jQuery  -->
+      <script src="assets/plugins/jquery/jquery.min.js"></script>
+      <script src="assets/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+      <script src="assets/plugins/feather-icon/feather.min.js"></script>
+      <script src="assets/plugins/metisMenu/metisMenu.min.js"></script>
+      <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>	  
+      <!-- App JS -->
+      <script src="assets/js/app.js"></script>
+   </body>
+</html>

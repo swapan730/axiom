@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Axiom - Chat, Discussion, Forums, Knowledge and Support Platform</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta content="A premium admin dashboard template by Mannatthemes" name="description">
+      <meta name="author" content="">
+      <!-- Main CSS -->
+      <link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="assets/plugins/metisMenu/metisMenu.min.css">
+      <link rel="stylesheet" type="text/css" href="assets/plugins/themify-icons/themify-icons.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/app.min.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <!-- Favicon -->
+      <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+   </head>
+   <body>
+      <!--================================-->
+      <!-- Top Bar Start -->
+      <!--================================-->
+      <div class="topbar">
+         <!-- Logo Start -->
+         <div class="topbar-left">
+            <a href="index.html" class="logo">
+            <span><img src="assets/images/logo-sm.png" alt="logo-small" class="logo-sm"> </span>
+            <span><img src="assets/images/logo-dark.png" alt="logo-large" class="logo-lg"></span>
+            </a>
+         </div>
+         <!--/ Logo End-->
+         <!-- Profile Dropdown Start -->
+         <nav class="navbar-custom">
+            <ul class="list-unstyled topbar-nav float-right mb-0">
+               <li class="dropdown">
+                  <a class="nav-link dropdown-toggle nav-user" data-toggle="dropdown" href="" role="button" aria-haspopup="false" aria-expanded="false" data-display="static"><img src="assets/images/avatar/avatar5.png" alt="profile-user" class="rounded-circle"></a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                     <a class="dropdown-item" href="view-profile.html"><i data-feather="user" class="wd-16 ht-16 mr-2"></i>View Profile</a> 
+                     <a class="dropdown-item" href="edit-profile.html"><i data-feather="edit" class="wd-16 ht-16 mr-2"></i>Edit Profile</a> 
+                     <a class="dropdown-item" href=""><i data-feather="dollar-sign" class="wd-16 ht-16 mr-2"></i> My Wallet</a>
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" href="tickets-home.html"><i data-feather="help-circle" class="wd-16 ht-16 mr-2"></i>Supports Center</a> 
+                     <a class="dropdown-item" href="tickets-home.html"><i data-feather="crosshair" class="wd-16 ht-16 mr-2"></i>Customer Helpline</a> 
+                     <a class="dropdown-item" href="forums.html"><i data-feather="life-buoy" class="wd-16 ht-16 mr-2"></i>Forum Discussion</a>
+                     <a class="dropdown-item" href="#modalAccountSettings" data-toggle="modal"><i data-feather="settings" class="wd-16 ht-16 mr-2"></i>Account Settings</a>
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" href="sign-in.html"><i data-feather="power" class="wd-16 ht-16 mr-2"></i> Sign Out</a>
+                  </div>
+               </li>
+            </ul>
+            <ul class="list-unstyled topbar-nav mb-0">
+               <li><button class="button-menu-mobile nav-link"><i class="wd-20 ht-20" data-feather="align-justify" ></i></button></li>
+               <li class="hide-phone app-search">
+                  <form role="search" class=""><input type="text" placeholder="Search..." class="form-control"> <a href=""><i class="wd-16 ht-16" data-feather="search"></i></a></form>
+               </li>
+            </ul>
+         </nav>
+         <!--/ Profile Dropdown End -->
+      </div>
+      <!--/ Topbar End -->
+      <!--================================-->
+      <!-- Page Wrapper Start -->
+      <!--================================-->
+      <div class="page-wrapper">
+         <!--================================-->
+         <!-- Sidebar Navigation Start -->
+         <!--================================-->
+         <div class="left-sidenav">
+            <div class="main-icon-menu">
+               <nav class="nav">
+                  <a href="#chatDiscussion" class="nav-link" data-toggle="tooltip-custom" data-placement="right" title="" data-original-title="Chat & Discussion">
+                  <i data-feather="message-square"></i>
+                  </a>
+                  <a href="#questionsAnswers" class="nav-link" data-toggle="tooltip-custom" data-placement="right" title="" data-original-title="Questions & Answers">
+                  <i data-feather="help-circle"></i>                     
+                  </a>
+                  <a href="#knowledgeBase" class="nav-link" data-toggle="tooltip-custom" data-placement="right" title="" data-original-title="Knowledge Base">
+                  <i data-feather="command"></i>
+                  </a>
+                  <a href="#ticketsSupports" class="nav-link" data-toggle="tooltip-custom" data-placement="right" title="" data-original-title="Tickets/Supports">
+                  <i data-feather="life-buoy"></i>
+                  </a>
+                  <a href="#myProfile" class="nav-link" data-toggle="tooltip-custom" data-placement="right" title="" data-original-title="My Profile">
+                  <i data-feather="user"></i>
+                  </a>
+                  <a href="#authenticationPages" class="nav-link" data-toggle="tooltip-custom" data-placement="right" title="" data-original-title="Authentication" style="margin-top: auto;">
+                  <i data-feather="box"></i>
+                  </a>
+                  <a href="#modalAccountSettings" class="mg-t-15 tx-dark" data-toggle="modal" data-placement="right" title="" data-original-title="Settings">
+                  <span data-toggle="tooltip-custom" data-placement="right" title="" data-original-title="Account Settings"><i data-feather="settings"></i></span>
+                  </a>				  
+                  <a href="sign-in.html" class="mg-t-20 tx-dark" data-toggle="tooltip-custom" data-placement="right" title="" data-original-title="Sign Out">
+                  <i data-feather="power"></i>
+                  </a>
+               </nav>
+            </div>
+            <div class="main-menu-inner">
+               <div class="menu-body slimscroll">
+                  <div id="chatDiscussion" class="main-icon-menu-pane">
+                     <div class="title-box">
+                        <h6 class="menu-title">Chat & Discussion</h6>
+                     </div>
+                     <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><i class="wd-16 ht-16 mr-2" data-feather="message-circle"></i>Live Chats</a></li>
+                        <li class="nav-item"><a class="nav-link" href="groups.html"><i class="wd-16 ht-16 mr-2" data-feather="users"></i>Groups</a></li>
+                        <li class="nav-item"><a class="nav-link" href="events.html"><i class="wd-16 ht-16 mr-2" data-feather="coffee"></i>Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="forums.html"><i class="wd-16 ht-16 mr-2" data-feather="layout"></i>Forums</a></li>
+                     </ul>
+                  </div>
+                  <div id="questionsAnswers" class="main-icon-menu-pane">
+                     <div class="title-box">
+                        <h6 class="menu-title">Questions & Answers</h6>
+                     </div>
+                     <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="new-questions.html"><i class="wd-16 ht-16 mr-2" data-feather="gitlab"></i>New Questions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="trending-questions.html"><i class="wd-16 ht-16 mr-2" data-feather="zap"></i>Trending Questions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hot-questions.html"><i class="wd-16 ht-16 mr-2" data-feather="coffee"></i>Hot Questions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="popular-questions.html"><i class="wd-16 ht-16 mr-2" data-feather="layout"></i>Popular Questions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="most-answered-questions.html"><i class="wd-16 ht-16 mr-2" data-feather="help-circle"></i>Most Answered</a></li>
+                        <li class="nav-item"><a class="nav-link" href="must-read-questions.html"><i class="wd-16 ht-16 mr-2" data-feather="check-circle"></i>Must read Questions</a></li>
+                     </ul>
+                  </div>
+                  <div id="knowledgeBase" class="main-icon-menu-pane">
+                     <div class="title-box">
+                        <h6 class="menu-title">Knowledge Base</h6>
+                     </div>
+                     <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="topics-home.html"><i class="wd-16 ht-16 mr-2" data-feather="feather"></i>Topics Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="single-topic.html"><i class="wd-16 ht-16 mr-2" data-feather="copy"></i>Single Topic</a></li>
+                        <li class="nav-item"><a class="nav-link" href="popular-topics.html"><i class="wd-16 ht-16 mr-2" data-feather="layout"></i>Popular Topics</a></li>
+                     </ul>
+                  </div>
+                  <div id="ticketsSupports" class="main-icon-menu-pane nav.navigation">
+                     <div class="title-box">
+                        <h6 class="menu-title">Tickets/Supports</h6>
+                     </div>
+                     <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="tickets-home.html"><i class="wd-16 ht-16 mr-2" data-feather="feather"></i>Tickets Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="single-ticket.html"><i class="wd-16 ht-16 mr-2" data-feather="copy"></i>Single Ticket</a></li>
+                        <li class="nav-item"><a class="nav-link" href="supports-team.html"><i class="wd-16 ht-16 mr-2" data-feather="users"></i>Supports Team</a></li>
+                     </ul>
+                  </div>
+                  <div id="myProfile" class="main-icon-menu-pane">
+                     <div class="title-box">
+                        <h6 class="menu-title">My Profile</h6>
+                     </div>
+                     <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="view-profile.html"><i class="wd-16 ht-16 mr-2" data-feather="user"></i>View Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="edit-profile.html"><i class="wd-16 ht-16 mr-2" data-feather="edit"></i>Edit Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#modalAccountSettings" data-toggle="modal"><i class="wd-16 ht-16 mr-2" data-feather="settings"></i>Settings</a></li>
+                     </ul>
+                  </div>
+                  <div id="authenticationPages" class="main-icon-menu-pane">
+                     <div class="title-box">
+                        <h6 class="menu-title">Authentication</h6>
+                     </div>
+                     <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="sign-in.html"><i class="dripicons-enter"></i>Sign In</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sign-up.html"><i class="dripicons-pencil"></i>Sign Up</a></li>
+                        <li class="nav-item"><a class="nav-link" href="lock-screen.html"><i class="dripicons-lock"></i>Lock Screen</a></li>
+                        <li class="nav-item"><a class="nav-link" href="404.html"><i class="dripicons-warning"></i>Error 404</a></li>
+                        <li class="nav-item"><a class="nav-link" href="500.html"><i class="dripicons-wrong"></i>Error 500</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--/ Sidebar Navigation End -->
+         <!--================================-->
+         <!-- Page Contant Start -->
+         <!--================================-->
+         <div class="page-content">
+            <div class="container-fluid">
+               <div class="row no-gutters clearfix pd-0">
+                  <div class="col-md-4 col-xl-3">
+                     <div class="pd-15 content-left-sidebar slimscroll">
+                        <div class="d-flex align-items-center justify-content-between mg-b-15">
+                           <h6 class="tx-13 tx-bold tx-dark mb-0">Popular Topics</h6>
+                        </div>
+                        <ul class="list-unstyled media-list mb-0">
+                           <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>How to install WordPress?</a></li>
+                           <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Creating your first database</a></li>
+                           <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Installation theme via FTP</a></li>
+                           <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Installation of the </a></li>
+                           <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Import content like demo</a></li>
+                           <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>How to change color?</a></li>
+                           <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>How to install WordPress?</a></li>
+                           <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Creating your first database</a></li>
+                           <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Installation theme via FTP</a></li>
+                           <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Installation of the </a></li>
+                           <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Import content like demo</a></li>
+                           <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>How to change color?</a></li>
+                        </ul>
+                        <h6 class="tx-13 tx-bold tx-dark pd-t-30 mg-b-15">Topics By Category</h6>
+                        <nav class="nav nav-classic tx-13">
+                           <a href="" class="pd-y-5 tx-dark wd-100p d-flex justify-content-between">
+                           <span>Web Design</span> 
+                           <span class="tx-gray-500">400</span>
+                           </a>
+                           <a href="" class="pd-y-5 tx-dark wd-100p d-flex justify-content-between">
+                           <span>Frontend Design</span> 
+                           <span class="tx-gray-500">230</span>
+                           </a>
+                           <a href="" class="pd-y-5 tx-dark wd-100p d-flex justify-content-between">
+                           <span>Web Developer</span> 
+                           <span class="tx-gray-500">320</span>
+                           </a>
+                           <a href="" class="pd-y-5 tx-dark wd-100p d-flex justify-content-between">
+                           <span>Bootstrap Design</span> 
+                           <span class="tx-gray-500">190</span>
+                           </a>
+                           <a href="" class="pd-y-5 tx-dark wd-100p d-flex justify-content-between">
+                           <span>Full-Stack Design</span> 
+                           <span class="tx-gray-500">210</span>
+                           </a>
+                        </nav>
+                        <h6 class="tx-13 tx-bold tx-dark pd-t-30 mg-b-15">Topics By Tags</h6>
+                        <a href="" class="pd-y-5 tx-dark bd pd-y-5 pd-x-15 wd-50p d-inline-block clearfix">
+                        <span>Design</span> 
+                        </a>
+                        <a href="" class="pd-y-5 tx-dark bd pd-y-5 pd-x-15 wd-45p d-inline-block clearfix">
+                        <span>Frontend</span> 
+                        </a>
+                        <a href="" class="pd-y-5 tx-dark bd pd-y-5 pd-x-15 wd-50p d-inline-block clearfix">
+                        <span>Developer</span> 
+                        </a>
+                        <a href="" class="pd-y-5 tx-dark bd pd-y-5 pd-x-15 wd-45p d-inline-block clearfix">
+                        <span>Bootstrap</span> 
+                        </a>
+                        <a href="" class="pd-y-5 tx-dark bd pd-y-5 pd-x-15 wd-50p d-inline-block clearfix">
+                        <span>Marketing</span> 
+                        </a>			
+                        <a href="" class="pd-y-5 tx-dark bd pd-y-5 pd-x-15 wd-45p d-inline-block clearfix">
+                        <span>Design</span> 
+                        </a>
+                        <a href="" class="pd-y-5 tx-dark bd pd-y-5 pd-x-15 wd-50p d-inline-block clearfix">
+                        <span>Frontend</span> 
+                        </a>
+                        <a href="" class="pd-y-5 tx-dark bd pd-y-5 pd-x-15 wd-45p d-inline-block clearfix">
+                        <span>Developer</span> 
+                        </a>
+                        <a href="" class="pd-y-5 tx-dark bd pd-y-5 pd-x-15 wd-50p d-inline-block clearfix">
+                        <span>Bootstrap</span> 
+                        </a>
+                        <a href="" class="pd-y-5 tx-dark bd pd-y-5 pd-x-15 wd-45p d-inline-block clearfix">
+                        <span>Marketing</span> 
+                        </a>			
+                        <a href="" class="pd-y-5 tx-dark bd pd-y-5 pd-x-15 wd-50p d-inline-block clearfix">
+                        <span>Design</span> 
+                        </a>
+                        <a href="" class="pd-y-5 tx-dark bd pd-y-5 pd-x-15 wd-45p d-inline-block clearfix">
+                        <span>Frontend</span> 
+                        </a>
+                        <a href="" class="pd-y-5 tx-dark bd pd-y-5 pd-x-15 wd-50p d-inline-block clearfix">
+                        <span>Developer</span> 
+                        </a>
+                        <a href="" class="pd-y-5 tx-dark bd pd-y-5 pd-x-15 wd-45p d-inline-block clearfix">
+                        <span>Bootstrap</span> 
+                        </a>
+                        <h6 class="tx-13 tx-bold tx-dark pd-t-30 mg-b-15">Support Members</h6>
+                        <a href="" class="media pd-y-10">
+                           <div class="mr-2">
+                              <span class="avatar d-block">
+                              <img src="assets/images/avatar/avatar1.png" class="img-fluid wd-35 rounded-circle" alt="">
+                              </span>
+                           </div>
+                           <div class="d-iline-block wd-100p">
+                              <div class="d-flex justify-content-between align-items-center">
+                                 <h6 class="mb-0 tx-13 tx-dark">Katherine</h6>
+                                 <span class="badge badge-primary badge-pill">Professional</span>
+                              </div>
+                              <div class="d-flex justify-content-between align-items-center mg-t-5">
+                                 <span class="ft-right tx-11 tx-gray-600"><i class="wd-16" data-feather="message-square"></i> 270 Answers</span>
+                                 <p class="mb-0 tx-gray-400 tx-11">2,324 Points</p>
+                              </div>
+                           </div>
+                        </a>
+                        <a href="" class="media pd-y-10">
+                           <div class="mr-2">
+                              <span class="avatar d-block">
+                              <img src="assets/images/avatar/avatar2.png" class="img-fluid wd-35 rounded-circle" alt="">
+                              </span>
+                           </div>
+                           <div class="d-iline-block wd-100p">
+                              <div class="d-flex justify-content-between align-items-center">
+                                 <h6 class="mb-0 tx-13 tx-dark">Daniel</h6>
+                                 <span class="badge badge-success badge-pill">Explainer</span>
+                              </div>
+                              <div class="d-flex justify-content-between align-items-center mg-t-5">
+                                 <span class="ft-right tx-11 tx-gray-600"><i class="wd-16" data-feather="message-square"></i> 210 Answers</span>
+                                 <p class="mb-0 tx-gray-400 tx-11">2,024 Points</p>
+                              </div>
+                           </div>
+                        </a>
+                        <a href="" class="media pd-y-10">
+                           <div class="mr-2">
+                              <span class="avatar d-block">
+                              <img src="assets/images/avatar/avatar3.png" class="img-fluid wd-35 rounded-circle" alt="">
+                              </span>
+                           </div>
+                           <div class="d-iline-block wd-100p">
+                              <div class="d-flex justify-content-between align-items-center">
+                                 <h6 class="mb-0 tx-13 tx-dark">Jeffery</h6>
+                                 <span class="badge badge-success badge-pill">Explainer</span>
+                              </div>
+                              <div class="d-flex justify-content-between align-items-center mg-t-5">
+                                 <span class="ft-right tx-11 tx-gray-600"><i class="wd-16" data-feather="message-square"></i> 192 Answers</span>
+                                 <p class="mb-0 tx-gray-400 tx-11">1,924 Points</p>
+                              </div>
+                           </div>
+                        </a>
+                        <a href="" class="media pd-y-10">
+                           <div class="mr-2">
+                              <span class="avatar d-block">
+                              <img src="assets/images/avatar/avatar4.png" class="img-fluid wd-35 rounded-circle" alt="">
+                              </span>
+                           </div>
+                           <div class="d-iline-block wd-100p">
+                              <div class="d-flex justify-content-between align-items-center">
+                                 <h6 class="mb-0 tx-13 tx-dark">Jensen</h6>
+                                 <span class="badge badge-primary badge-pill">Professional</span>
+                              </div>
+                              <div class="d-flex justify-content-between align-items-center mg-t-5">
+                                 <span class="ft-right tx-11 tx-gray-600"><i class="wd-16" data-feather="message-square"></i> 170 Answers</span>
+                                 <p class="mb-0 tx-gray-400 tx-11">1,624 Points</p>
+                              </div>
+                           </div>
+                        </a>
+                        <a href="" class="media pd-t-10">
+                           <div class="mr-2">
+                              <span class="avatar d-block">
+                              <img src="assets/images/avatar/avatar5.png" class="img-fluid wd-35 rounded-circle" alt="">
+                              </span>
+                           </div>
+                           <div class="d-iline-block wd-100p">
+                              <div class="d-flex justify-content-between align-items-center">
+                                 <h6 class="mb-0 tx-13 tx-dark">Madsen</h6>
+                                 <span class="badge badge-danger badge-pill">Master</span>
+                              </div>
+                              <div class="d-flex justify-content-between align-items-center mg-t-5">
+                                 <span class="ft-right tx-11 tx-gray-600"><i class="wd-16" data-feather="message-square"></i> 145 Answers</span>
+                                 <p class="mb-0 tx-gray-400 tx-11">1,545 Points</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-md-8 col-xl-9">
+                     <!--================================-->               
+                     <!-- Topics Content Start-->
+                     <!--================================-->
+                     <div class="row row-xs pd-10 clearfix slimscroll">
+                        <div class="col-lg-12">
+                           <div class="tx-center pd-t-50">
+                              <h2>Have any Question?</h2>
+                              <p class="">You can ask below or enter what you are looking for!</p>
+                           </div>
+                           <div class="input-group pd-b-50 mx-auto wd-70p">
+                              <input type="text" class="form-control form-control-lg" placeholder="Search Here...">
+                              <div class="input-group-append">
+                                 <button type="button" class="btn btn-primary"> <i class="fa fa-search mg-r-5"></i> Search</button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-4">
+                           <div class="card">
+                              <div class="d-flex justify-content-between align-items-center bd-b pd-10">
+                                 <h3 class="tx-13 tx-medium mb-0"><a class="tx-dark" href="">Web Design</a></h3>
+                                 <a href="">6 Articles</a>
+                              </div>
+                              <ul class="list-unstyled pd-15 mb-0">
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>How to install WordPress?</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Creating your first database / mysql</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Installation theme via FTP</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Installation of the necessary add-ons</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Import demo content like our demo</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>How to change color schemes?</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-4 mg-t-10 mg-lg-t-0">
+                           <div class="card">
+                              <div class="d-flex justify-content-between align-items-center bd-b pd-10">
+                                 <h3 class="tx-13 tx-medium mb-0"><a class="tx-dark" href="">App Development</a></h3>
+                                 <a href="">6 Articles</a>
+                              </div>
+                              <ul class="list-unstyled pd-15 mb-0">
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>How to change color schemes?</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Using Google web fonts for all sections</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Introduction theme setups</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Menu color and text change</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Using child theme for custom styles</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Changing footer and copyright colors</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-4 mg-t-10 mg-xl-t-0">
+                           <div class="card">
+                              <div class="d-flex justify-content-between align-items-center bd-b pd-10">
+                                 <h3 class="tx-13 tx-medium mb-0"><a class="tx-dark" href="">Graphics Design</a></h3>
+                                 <a href="">6 Articles</a>
+                              </div>
+                              <ul class="list-unstyled pd-15 mb-0">
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>How to change color schemes?</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Using Google web fonts for all sections</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Introduction theme setups</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Menu color and text change</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Using child theme for custom styles</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Changing footer and copyright colors</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-4 mg-t-10">
+                           <div class="card">
+                              <div class="d-flex justify-content-between align-items-center bd-b pd-10">
+                                 <h3 class="tx-13 tx-medium mb-0"><a class="tx-dark" href="">Motion Graphics</a></h3>
+                                 <a href="">6 Articles</a>
+                              </div>
+                              <ul class="list-unstyled pd-15 mb-0">
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>How to change color schemes?</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Using Google web fonts for all sections</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Introduction theme setups</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Menu color and text change</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Using child theme for custom styles</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Changing footer and copyright colors</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-4 mg-t-10">
+                           <div class="card">
+                              <div class="d-flex justify-content-between align-items-center bd-b pd-10">
+                                 <h3 class="tx-13 tx-medium mb-0"><a class="tx-dark" href="">Photography </a></h3>
+                                 <a href="">6 Articles</a>
+                              </div>
+                              <ul class="list-unstyled pd-15 mb-0">
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>How to change color schemes?</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Using Google web fonts for all sections</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Introduction theme setups</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Menu color and text change</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Using child theme for custom styles</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Changing footer and copyright colors</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-4 mg-t-10">
+                           <div class="card">
+                              <div class="d-flex justify-content-between align-items-center bd-b pd-10">
+                                 <h3 class="tx-13 tx-medium mb-0"><a class="tx-dark" href="">Customization</a></h3>
+                                 <a href="">6 Articles</a>
+                              </div>
+                              <ul class="list-unstyled pd-15 mb-0">
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>How to change color schemes?</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Using Google web fonts for all sections</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Introduction theme setups</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Menu color and text change</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Using child theme for custom styles</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Changing footer and copyright colors</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-4 mg-t-10">
+                           <div class="card">
+                              <div class="d-flex justify-content-between align-items-center bd-b pd-10">
+                                 <h3 class="tx-13 tx-medium mb-0"><a class="tx-dark" href="">Billing</a></h3>
+                                 <a href="">6 Articles</a>
+                              </div>
+                              <ul class="list-unstyled pd-15 mb-0">
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Upgrade subscription plan?</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Developer license</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Change subscription plans</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>How can i contact a sales rep?</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Do I Need To Pay VAT?</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>What’s The Difference Billing?</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-4 mg-t-10">
+                           <div class="card">
+                              <div class="d-flex justify-content-between align-items-center bd-b pd-10">
+                                 <h3 class="tx-13 tx-medium mb-0"><a class="tx-dark" href="">Security</a></h3>
+                                 <a href="">6 Articles</a>
+                              </div>
+                              <ul class="list-unstyled pd-15 mb-0">
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Data encryption</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>How to get and activate purchase code</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Can i login with my twitter account?</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Do you support 2 step authentication?</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>How to retrieve your password?</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>How Do I File A DMCA?</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-4 mg-t-10">
+                           <div class="card">
+                              <div class="d-flex justify-content-between align-items-center bd-b pd-10">
+                                 <h3 class="tx-13 tx-medium mb-0"><a class="tx-dark" href="">Privacy</a></h3>
+                                 <a href="">6 Articles</a>
+                              </div>
+                              <ul class="list-unstyled pd-15 mb-0">
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Security questions</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Twitter user Data handling</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Cookie placement</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>What is your privacy policy ?</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Facebook authentication</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>How Do I File A DMCA?</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-4 mg-t-10">
+                           <div class="card">
+                              <div class="d-flex justify-content-between align-items-center bd-b pd-10">
+                                 <h3 class="tx-13 tx-medium mb-0"><a class="tx-dark" href="">Copyright</a></h3>
+                                 <a href="">6 Articles</a>
+                              </div>
+                              <ul class="list-unstyled pd-15 mb-0">
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Transfer ownership</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>How to use your account safely</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>How Do I Contact the Legal Dept?</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Our Content Policy</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Who Owns The Copyright On Images?</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>How Do I File A DMCA?</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-4 mg-t-10">
+                           <div class="card">
+                              <div class="d-flex justify-content-between align-items-center bd-b pd-10">
+                                 <h3 class="tx-13 tx-medium mb-0"><a class="tx-dark" href="">API</a></h3>
+                                 <a href="">6 Articles</a>
+                              </div>
+                              <ul class="list-unstyled pd-15 mb-0">
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Api Key missing – wrong parameter</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Can I Get A Refund?</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Where can i find the API?</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Why was my developer application?</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i> What technologies do you use?</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>How many Api keys i use?</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-4 mg-t-10">
+                           <div class="card">
+                              <div class="d-flex justify-content-between align-items-center bd-b pd-10">
+                                 <h3 class="tx-13 tx-medium mb-0"><a class="tx-dark" href="">F.A.Q</a></h3>
+                                 <a href="">6 Articles</a>
+                              </div>
+                              <ul class="list-unstyled pd-15 mb-0">
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i> How to edit the parameters</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>What is the difference types</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Do you support multiple theme use?</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>License agreement</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Extended support?</a></li>
+                                 <li><a href="single-topic.html" class="tx-gray-500"><i class="wd-16 mr-1" data-feather="folder-plus"></i>Step by step tutorial for tickets</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!--/ Topics Content End-->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--/ Page Content End -->
+      </div>
+      <!--/ Page Wrapper End -->
+      <!--================================-->
+      <!-- Account Settings Modal Start -->
+      <!--================================-->
+      <div class="modal fade effect-scale" id="modalAccountSettings" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title">Settings</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <i class="ti-close tx-16"></i>
+                  </button>
+               </div>
+               <div class="modal-body pd-y-20">
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#account" role="tab" aria-controls="account" aria-selected="true">Account</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#notification" role="tab" aria-controls="notification" aria-selected="false">Notification</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#system" role="tab" aria-controls="system" aria-selected="false">System</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#reports" role="tab" aria-controls="reports" aria-selected="false">Reports</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#security" role="tab" aria-controls="security" aria-selected="false">Security</a>
+                     </li>
+                  </ul>
+                  <div class="tab-content pd-y-20">
+                     <div class="tab-pane show active" id="account" role="tabpanel">
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch1">
+                           <label class="custom-control-label" for="customSwitch1">Allow connected contacts</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch2">
+                           <label class="custom-control-label" for="customSwitch2">Confirm message requests</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch3">
+                           <label class="custom-control-label" for="customSwitch3">Profile privacy</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" id="customSwitch4">
+                           <label class="custom-control-label" for="customSwitch4">Developer mode options</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch5">
+                           <label class="custom-control-label" for="customSwitch5">Two-step security verification</label>
+                        </div>
+                     </div>
+                     <div class="tab-pane" id="notification" role="tabpanel">
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch6">
+                           <label class="custom-control-label" for="customSwitch6">Allow mobile notifications</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch7">
+                           <label class="custom-control-label" for="customSwitch7">Notifications from your friends</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" id="customSwitch8">
+                           <label class="custom-control-label" for="customSwitch8">Send notifications by email</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch9">
+                           <label class="custom-control-label" for="customSwitch9">Notify when receive email</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch10">
+                           <label class="custom-control-label" for="customSwitch10">Receive calls in meeting</label>
+                        </div>
+                     </div>
+                     <div class="tab-pane" id="system" role="tabpanel">
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch11">
+                           <label class="custom-control-label" for="customSwitch11">Automatic updates</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" id="customSwitch12">
+                           <label class="custom-control-label" for="customSwitch12">Current statistics</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" id="customSwitch13">
+                           <label class="custom-control-label" for="customSwitch13">New user registration</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" id="customSwitch14">
+                           <label class="custom-control-label" for="customSwitch14">User suggestions</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch15">
+                           <label class="custom-control-label" for="customSwitch15">Update on task completion</label>
+                        </div>
+                     </div>
+                     <div class="tab-pane" id="reports" role="tabpanel">
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch16">
+                           <label class="custom-control-label" for="customSwitch16">Generate Reports</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch17">
+                           <label class="custom-control-label" for="customSwitch17">Notify when receive email</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch18">
+                           <label class="custom-control-label" for="customSwitch18">Enable Report Export</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" id="customSwitch19">
+                           <label class="custom-control-label" for="customSwitch19">Allow Data Collection</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch20">
+                           <label class="custom-control-label" for="customSwitch20">Update on task completion</label>
+                        </div>
+                     </div>
+                     <div class="tab-pane" id="security" role="tabpanel">
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" id="customSwitch21">
+                           <label class="custom-control-label" for="customSwitch21">Suggest changing passwords every month.</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pd-y-5">
+                           <input type="checkbox" class="custom-control-input" checked="" id="customSwitch22">
+                           <label class="custom-control-label" for="customSwitch22">Let me know about suspicious entries to your account</label>
+                        </div>
+                        <div class="form-item mg-t-15">
+                           <p>
+                              <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true" aria-controls="collapseExample" class="">
+                              <span class="ti-plus btn-icon"></span> Security Questions
+                              </a>
+                           </p>
+                           <div class="collapse show" id="collapseExample" style="">
+                              <div class="form-group">
+                                 <input type="text" class="form-control form-control-sm" placeholder="Question 1">
+                              </div>
+                              <div class="form-group">
+                                 <input type="text" class="form-control form-control-sm" placeholder="Question 2">
+                              </div>
+                              <div class="form-group">
+                                 <input type="text" class="form-control form-control-sm" placeholder="Question 3">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-sm btn-primary">Save Settings</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--/ Account Settings Modal End  --> 
+      <!-- jQuery  -->
+      <script src="assets/plugins/jquery/jquery.min.js"></script>
+      <script src="assets/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+      <script src="assets/plugins/feather-icon/feather.min.js"></script>
+      <script src="assets/plugins/metisMenu/metisMenu.min.js"></script>
+      <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>	  
+      <!-- App JS -->
+      <script src="assets/js/app.js"></script>
+   </body>
+</html>
